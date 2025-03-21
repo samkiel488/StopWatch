@@ -1,0 +1,203 @@
+body{
+    color: white;
+    margin: 30px 3px;
+    text-align: center;    
+    overflow-y: scroll;
+    font-family: serif;
+    padding: 20px;
+}
+
+/* just testing a blurred bg 
+body::before{
+    content: '';
+    position: absolute;
+    background-image: url("Slogo.jpg");
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(15px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+} */
+
+#StopWatch{
+    display: block;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin: 10px ;
+    display: inline-block;
+}
+
+#Counter{
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+
+    #increasebtn,  #resetbtn,  #decreasebtn{
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 15px;
+        background-color: blue;
+        color: beige;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.35s;
+    }
+
+    #StopWatch{
+        display: block;
+        cursor: pointer;
+        font-size: 1.9rem;
+        margin: 0;
+        display: inline-block;
+    }
+    
+    #Counter{
+        display: block;
+        cursor: pointer;
+        font-size: 1.9rem;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    #click {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        color: wheat;
+    }
+
+    #counter{
+        font-size: 1.2em;
+        display: none;
+        border: 13px solid blue;
+        border-radius: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #countlabel {
+        display: block;
+        text-align: center;
+        font-size: 5em;
+        font-family: fantasy;
+        color: wheat;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+}
+
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse-animation {
+    animation: pulse 1s infinite;
+}
+
+
+.stop{
+    border: 15px solid blue;
+    border-radius: 20px;
+    padding: 50px 0px;
+}
+
+.timer{
+    padding: 20px;
+    font-size: 3.4rem;
+    color: rgb(50, 22, 175);
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: blue;
+    color: beige;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.35s;
+}
+
+button:hover{
+    background-color: rgb(59, 47, 95);
+
+}
+
+
+.abb {
+    color: blueviolet;
+    font-size: 2rem;
+}
+
+.click {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: wheat;
+    animation: pulse 1s infinite;
+}
+
+/* After heree style is for counter*/
+
+
+body {
+    background-color: rgb(29, 21, 54);
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.counter{
+    font-size: 1.2em;
+    display: none;
+    border: 20px solid blue;
+    border-radius: 20px;
+    padding: 50px 0px;
+}
+
+#countlabel {
+    display: block;
+    text-align: center;
+    font-size: 12em;
+    font-family: fantasy;
+    color: wheat;
+}
+
+#btncontainer {
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center; 
+}
